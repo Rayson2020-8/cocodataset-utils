@@ -41,6 +41,7 @@ class Analyzer:
         self.imgs_data = np.zeros((imgs_num, 4))
         self.anos_data = np.zeros((anos_num, 8))
         self.cats_data = np.zeros((cat_num, 2))
+        temp_ano_i = 0
         for ig_id in img_ids:
             img_sample = self.coco.loadImgs(ig_id)[0]
             self.imgs_data[ig_id, 0] = img_sample["width"]
@@ -50,16 +51,17 @@ class Analyzer:
             self.imgs_data[ig_id, 3] = len(relate_anos_ids)
             for ano_id in relate_anos_ids:
                 ano_sample = self.coco.loadAnns(ano_id)[0]
-                self.anos_data[ano_id, 0] = ano_sample["area"]
-                self.anos_data[ano_id, 1] = self.__calObjSize(ano_sample["area"], self.s_threshold, self.m_threshold)
-                self.anos_data[ano_id, 2] = ano_sample['area'] / img_area
-                self.anos_data[ano_id, 3] = ano_sample["bbox"][3] / ano_sample["bbox"][2]
-                self.anos_data[ano_id, 4] = ano_sample["category_id"]
-                self.anos_data[ano_id, 5], self.anos_data[ano_id, 6] = self.__calMapIndex(ano_sample["bbox"], \
+                self.anos_data[temp_ano_i, 0] = ano_sample["area"]
+                self.anos_data[temp_ano_i, 1] = self.__calObjSize(ano_sample["area"], self.s_threshold, self.m_threshold)
+                self.anos_data[temp_ano_i, 2] = ano_sample['area'] / img_area
+                self.anos_data[temp_ano_i, 3] = ano_sample["bbox"][3] / ano_sample["bbox"][2]
+                self.anos_data[temp_ano_i, 4] = ano_sample["category_id"]
+                self.anos_data[temp_ano_i, 5], self.anos_data[temp_ano_i, 6] = self.__calMapIndex(ano_sample["bbox"], \
                                                                                    self.map_size,      \
                                                                                    img_sample["height"], \
                                                                                    img_sample["width"])
-                self.anos_data[ano_id, 7] = ano_sample["image_id"]
+                self.anos_data[temp_ano_i, 7] = ano_sample["image_id"]
+                temp_ano_i += 1
         for c_id in cat_ids:
             self.cats_data[:, 0] = self.coco.getImgIds(catIds=[c_id])[0]
             self.cats_data[:, 1] = sum(self.anos_data[:, 4] == c_id)
