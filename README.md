@@ -41,47 +41,47 @@ Analyzer("coco.json")
 
 （1）General information：Count the number of images, targets and categories
 
-![General information](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/General information.jpg)
+![General information](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/General_information.jpg)
 
 （2）Image size number：Number of images per size
 
-![Image size number](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Image size number.jpg)
+![Image size number](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Image_size_number.jpg)
 
 （3）Number of targets per picture：Target number of images per image
 
-![Number of targets per picture](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number of targets per picture.jpg)
+![Number of targets per picture](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number_of_targets_per_picture.jpg)
 
 （4）Number of pictures in each category：The number of each category
 
-![Number of pictures in each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number of pictures in each category.jpg)
+![Number of pictures in each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number_of_pictures_in_each_category.jpg)
 
 （5）Quantity proportion of each category：Proportion of each category
 
-![Quantity proportion of each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Quantity proportion of each category.jpg)
+![Quantity proportion of each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Quantity_proportion_of_each_category.jpg)
 
 （6）Number of each category：The number of targets contained in each category
 
-![Number of each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number of each category.jpg)
+![Number of each category](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Number_of_each_category.jpg)
 
 （7）Absolute target area：Target size category distribution:（Small <32x32, Big > 96x96, the rest is medium）
 
-![Absolute target area](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Absolute target area.jpg)
+![Absolute target area](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Absolute_target_area.jpg)
 
 （8）Object area distribution：Object absolute area distribution (L x W)
 
-![Object area distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object area distribution.jpg)
+![Object area distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object_area_distribution.jpg)
 
 （9）Object relative area distribution：Target relative area distribution, (target area/image area)
 
-![Object relative area distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object relative area distribution.jpg)
+![Object relative area distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object_relative_area_distribution.jpg)
 
 （10）Aspect ratio distribution：Target aspect ratio distribution
 
-![Aspect ratio distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Aspect ratio distribution.jpg)
+![Aspect ratio distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Aspect_ratio_distribution.jpg)
 
 （11）Object position distribution：The number of target centers distributed on the image
 
-![Object position distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object position distribution.jpg)
+![Object position distribution](https://github.com/Rayson2020-8/cocodataset-utils/tree/main/analysis_result/Object_position_distribution.jpg)
 
 
 

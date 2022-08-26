@@ -29,7 +29,7 @@ class DrawUtils():
         plt.pie(values, explode=explode, labels=labels, autopct='%1.1f%%')
         plt.title(title)
         if self.save_path:
-            save_path = os.path.join(self.save_path, title + ".jpg")
+            save_path = os.path.join(self.save_path, "_".join(title.split()) + ".jpg")
             plt.savefig(save_path)
             plt.close()
         else:
@@ -47,7 +47,7 @@ class DrawUtils():
         plt.colorbar()
         plt.tight_layout()
         if self.save_path:
-            save_path = os.path.join(self.save_path, title + ".jpg")
+            save_path = os.path.join(self.save_path, "_".join(title.split()) + ".jpg")
             plt.savefig(save_path)
             plt.close()
         else:
@@ -73,7 +73,7 @@ class DrawUtils():
         plt.ylabel(y_name)
         plt.title(title)
         if self.save_path:
-            save_path = os.path.join(self.save_path, title + ".jpg")
+            save_path = os.path.join(self.save_path, "_".join(title.split()) + ".jpg")
             plt.savefig(save_path)
             plt.close()
         else:
@@ -86,7 +86,7 @@ class DrawUtils():
         plt.ylabel(y_name)
         plt.title(title)
         if self.save_path:
-            save_path = os.path.join(self.save_path, title + ".jpg")
+            save_path = os.path.join(self.save_path, "_".join(title.split()) + ".jpg")
             plt.savefig(save_path)
             plt.close()
         else:
