@@ -11,7 +11,7 @@
 import collections
 import numpy as np
 from pycocotools.coco import COCO
-from drwaUtils import DrawUtils
+from cocoutils.drwaUtils import DrawUtils
 
 
 class Analyzer:
@@ -184,8 +184,8 @@ class Analyzer:
         return x_index, y_index
 
 if __name__=="__main__":
-    coco = r"C:\Users\rayson\coding_srs\srs_frame\openSource\source\voc2coco.json"
-    analysis_result = r"C:\Users\rayson\coding_srs\git_clone\cocodataset-utils\analysis_result"
+    coco = "coco.json"
+    analysis_result = "analysis_result"
     Analyzer(coco, analysis_result)
 
 
